@@ -22,9 +22,9 @@ data2 = data1[['mean radius','mean perimeter','mean area','mean concave points',
               'worst radius','worst perimeter','worst area','worst concave points','diagnosis']]
 
 
-#sns.pairplot(data2, hue='diagnosis')
-#plt.savefig('pairplot_target.png')
-#plt.show()
+sns.pairplot(data2, hue='diagnosis', diag_kind:{'hist'})
+plt.savefig('pairplot_target.png')
+plt.show()
 
 sns.heatmap(data2.corr(),annot=True,fmt='.0%')
 plt.savefig('breastcancer heat map')
@@ -39,7 +39,7 @@ plt.savefig('similarities.png')
 plt.show()
 
 data3 = data1[['worst concave points', 'perimeter error','mean radius', 'diagnosis']]
-sns.pairplot(data3, hue = 'diagnosis' , palette=sns.color_palette("cubehelix",2), markers=['D','o'])
+sns.pairplot(data3, hue = 'diagnosis', diag_kind:{'hist'}, palette=sns.color_palette("cubehelix",2), markers=['D','o'])
 plt.savefig('final_feature.png')
 plt.show()
 #plt.scatter(range(len(data1['perimeter error'])),data1['perimeter error']/data1['perimeter error'].max(), label='perimeter error')
