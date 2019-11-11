@@ -8,4 +8,13 @@ diagnosis was selected and presented in Figure 1 below. 20 features were elimina
 Figure 1.
 ![](pairplot_target.png)
 
-As a second step, correlation between these 10 features was analysed, and plotted as a heat map using seaborn in Figure 2. This part is crucial to understand how these features are independent from each other. It is mostly inefficient to use highly correlated features while processing the data. For instance, as it seem in Figure 2,  that highly correlated features is inefficient, It is possible to reduce complexity and dimensionality 
+As a second step, correlation between these 10 features was analysed, and plotted as a heat map using seaborn in Figure 2. This part is crucial to understand how these features are independent from each other. It is mostly inefficient to use highly correlated features while processing the data. 
+
+Figure 2.
+![](breastcancer_heat_map.png)
+
+
+As it seem in Figure 2 that 'mean radius', 'mean perimeter', 'mean area', 'worst radius', 'worst perimeter', and 'worst area' are highly correlated with each other (>90%). It means that we can select one representative feature among them. Such a selection can reduce dimension significantly, and therefore complexity. For instance, two highly correlated features ('mean area' and 'mean perimeter') and one showing average correlation ('perimeter error') with respect to 'mean radius' are plotted and demonstrated in Figure 3. Here, while 'mean area' and 'mean perimeter' are showing almost linear distribution against 'mean radius', 'perimeter error' indicates it as totally different and nonlinear.
+
+Figure 3.
+![](similarities.png)
