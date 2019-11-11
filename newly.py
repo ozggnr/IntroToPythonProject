@@ -21,6 +21,7 @@ data1['diagnosis'] = b_cancer.target
 data2 = data1[['mean radius','mean perimeter','mean area','mean concave points','perimeter error','area error',
               'worst radius','worst perimeter','worst area','worst concave points','diagnosis']]
 
+print(data2)
 sns.pairplot(data2, hue='diagnosis')
 plt.savefig('pairplot_target.png')
 plt.show()
