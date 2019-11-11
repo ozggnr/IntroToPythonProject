@@ -14,7 +14,7 @@ Figure 2.
 ![](breastcancer_heat_map.png)
 
 
-As it seem in Figure 2 that 'mean radius', 'mean perimeter', 'mean area', 'worst radius', 'worst perimeter', and 'worst area' are highly correlated with each other (>90%). It means that we can select one representative feature among them. Such a selection can reduce dimension significantly, and therefore complexity. For instance, two highly correlated features ('mean area' and 'mean perimeter') and one showing average correlation ('perimeter error') with respect to 'mean radius' are plotted and demonstrated in Figure 3. Here, while 'mean area' and 'mean perimeter' are showing almost linear distribution against 'mean radius', 'perimeter error' indicates it as totally different and nonlinear.
+As it seem in Figure 2 that 'mean radius', 'mean perimeter', 'mean area', 'worst radius', 'worst perimeter', and 'worst area' are highly correlated with each other (>90%). It means that we can select one representative feature among them. Such a selection can reduce dimension significantly, and therefore complexity. For instance, two highly correlated features ('mean area' and 'mean perimeter') and one showing average correlation ('perimeter error') with respect to 'mean radius' are normalized(to see their behaviour in the same range) and plotted in Figure 3. Here, while 'mean area' and 'mean perimeter' are showing almost linear distribution against 'mean radius', 'perimeter error' indicates it as totally different and nonlinear.
 
 Figure 3.
 ![](similarities.png)
