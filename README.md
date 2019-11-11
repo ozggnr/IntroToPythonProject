@@ -1,7 +1,7 @@
 # Homework 8 - Short Report about Visualization of Breast Cancer Wisconsin Dataset
 
 In this short report, Breast Cancer Dataset from sklearn database was investigated. As a first step, effect of
-features on the diagnosis (target: Maleign (as 0) or Benign (as 1)) was observed. There are 30 features in this dataset, and 
+features on the classification of diagnosis (target: Maleign (as 0) or Benign (as 1)) was observed. There are 30 features in this dataset, and 
 after plotting each feature against diagnosis, 10 features among them based on their distinctive data distribution against 
 diagnosis was selected and presented in Figure 1 below. 20 features were eliminated because their distribution was not clear to identify any region that allow us to differentiate particular diagnosis. 
 
@@ -18,3 +18,8 @@ As it seem in Figure 2 that 'mean radius', 'mean perimeter', 'mean area', 'worst
 
 Figure 3.
 ![](similarities.png)
+
+As a result, by eliminating highly correlated features, I end up with three features in total. These features show independent distribution with respect to each other. I can recommend to focus more on these three features while processing the data for future analysis. Moreover, for efficiency, instead of collection thirty features, one can collect data by considering only these three features. Figure 4 shows the pairplot of these three features' and corresponding diagnosis was identified with different colors. Distribution of diagnosis as 0 and 1 indicates their regions are almost well seperated. It makes us to be able to decide the diagnosis by considering the corresponding value regions. 
+
+Figure 4.
+![](final_feature.png)
