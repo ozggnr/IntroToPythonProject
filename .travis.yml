@@ -4,4 +4,4 @@ python:
  - 3.7
  
  script:
- - python3 newly.py
+ - ython3 newly.py
